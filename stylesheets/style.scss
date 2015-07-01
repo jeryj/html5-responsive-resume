@@ -1,0 +1,17 @@
+@import "../gulp/bower_components/susy/sass/susy";
+$susy: (
+/* Changing Susy default global settings */
+  /* Tells Susy to use 12 columns */
+  columns: 12,
+  /* Tells Susy that the container has a max-width of 1020px */
+  container: 560px,
+  /* Tells Susy to use border-box */
+  global-box-sizing: border-box
+);
+
+@import "setup";
+@import "colors";
+@import "grid";
+@import "typography";
+@import "resume";
+
