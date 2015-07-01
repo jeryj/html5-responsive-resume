@@ -48,12 +48,19 @@ $mobile: 24em;
   }
 }
 
+%container {
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 %row,
-.row {
+.row,
+.container {
     padding-left: 20px;
     padding-right: 20px;
     @extend %clearfix;
-    @include container;
+    @extend %container;
 }
 
 /*  SELF CLEARING FLOATS - CLEARFIX METHOD */
@@ -69,51 +76,4 @@ $mobile: 24em;
 [class*="site"] {
     @extend %clearfix;
 }
-
-
-
-// grid system
-@include media($tablet) {
-	@for $i from 1 through 12 {
-	    .grid_#{$i} {
-	      @include span($i);
-	    }
-
-	    .rtl_grid {
-	    	.grid_#{$i} {
-		      @include span($i rtl);
-		      margin-right: 0;
-		    }
-	    }
-
-	}
-
-	.last {
-	  float: right;
-	  margin-right: 0;
-	}
-
-	.rtl_grid .last {
-		margin-left: 0;
-	}
-}
-
-// gallery system
-@for $i from 2 through 4 {
-  	.gallery_#{$i} {
-      margin-bottom: 1.6em;
-
-  		@include media(30em) {
-	      	@include gallery(2 of 4);
-	      	margin-bottom: gutter(4);
-	    }
-
-	    @include media(43.75em) {
-	      	@include gallery($i of $i*$i);
-	      	margin-bottom: gutter($i*$i);
-	    }
-
-  	}
-}
-
 
