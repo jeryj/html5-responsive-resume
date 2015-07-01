@@ -3,7 +3,7 @@ HTML5 Responsive Résumé
 
 It's responsive! It's HTML5! It's a résumé!
 
-There's really not much HTML5 specific stuff here. The document is so simple that the extent of the HTML5 is just 'main role="main"' The role part is even pretty debatable there.
+There's really not much HTML5 specific stuff here. The document is so simple that the extent of the HTML5 is just &lt;main role="main"&gt;. The role part is even pretty debatable there.
 
 
 Set-up
