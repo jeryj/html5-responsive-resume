@@ -21,7 +21,7 @@
 
 <body>
 
-<main id="content" class="container" role="main">
+<header>
     <h1 class="page-title">Jeremy Jones</h1>
     <ul class="contact">
         <li>Kirksville, MO</li>
@@ -29,24 +29,52 @@
         <!--<li><a href="https://www.linkedin.com/in/jeremydavidjones">linkedin</a></li>-->
         <li>me@jeremyjon.es</li>
     </ul>
+</header>
 
+<main id="content" class="container" role="main">
     <!-- <h2 class="work-section-title">Intro</h2>
 
     <p>I'm almost 30, and this is the first time I've ever applied for a job. I've been led by my passion for learning, and, miraculously, people have paid me for it.</p>
+--> <section class="intro">
+        <p>Design and web development have been my focus for the last eight years. I've been led by my passion for learning and a desire to build projects that are accessible to people with disabilities.</p>
 
-    <p>Design &amp; Development have been my focus for the last seven years, and I'm ready to take on bigger challenges than I can tackle on my own. I'm looking for a wonderful, talented team who is passionate about making goal-focused, accessible websites.</p>-->
+        <p>I love solving complex problems that challenge me to learn, code, and design better than I ever have. I'm looking for a wonderful, talented team who is passionate about making goal-focused, accessible websites.</p>
+    </section>
 
 
     <h2 class="work-section-title">Experience</h2>
+
+    <h3 class="workplace">Engaging News Project</h3>
+    <h4 class="position-title">Designer &amp; Developer</h4>
+    <p class="time-worked"><time datetime="2015-09">September 2015</time> - Present</p>
+    <p class="work-link-wrap"><a class="work-link" href="https://engagingnewsproject.org">engagingnewsproject.org</a></p>
+
+    <p>The Engaging News Project researches democratically-beneficial and commercially-viable ways for journalists to engage with their readers. I strategize, design, develop, and maintain the online tools that the Engaging News Project has identified as beneficial via their research.</p>
+
+    <h4 class="resume-item__inner-title">Responsibilities</h4>
+    <ul>
+        <li>Back-end Development (PHP, JS)</li>
+        <li>Front-end Development (PHP, JS, HTML5, CSS, SCSS)</li>
+        <li>Design (UX, UI)</li>
+        <li>WordPress Theme and Plugin Development</li>
+        <li>Research project design for development and data collection.</li>
+        <li>Create project proposals (including gap analysis and feature descriptions) and oversee their implementation.</li>
+    </ul>
+
+    <h4 class="resume-item__inner-title">Major Projects</h4>
+    <ul>
+        <li><strong>Quiz Creator</strong>: A WordPress implementation for Journalists to create quizzes that they can embed on their sites. Features AB Testing, full quiz results, multiple question types, and customization. <a href="http://jeremyjon.es/portfolio/the-quiz-creator">Read more about my work on the Quiz Creator.</a></li>
+        <li><strong>Engaging Buttons</strong>: Based on the Engaging News Project's research on "Respect" vs "Like", I built the <a href="https://wordpress.org/plugins/engaging-buttons/">Engaging Buttons WordPress plugin</a> allowing anyone to add customizeable buttons to their posts, pages, and/or comments.
+    </ul>
+
     <h3 class="workplace">Messenger Pigeons</h3>
     <h4 class="position-title">Co-Founder and Design Director</h4>
-    <p class="time-worked"><time datetime="2012-01">January 2012</time> - Present</p>
+    <p class="time-worked"><time datetime="2012-01">January 2012</time> - <time datetime="2015-07">July 2015</time></p>
     <p class="work-link-wrap"><a class="work-link" href="http://www.messengerpigeons.com">www.messengerpigeons.com</a></p>
 
     <p>Created goal-focused designs with my business partner, and coded them using HTML5, CSS3 (recently via Sass/SCSS), javascript (usually via jQuery), and PHP on the WordPress CMS. Built extensive custom post types utilizing meta fields for our clients' ease of use. Our clients include:</p>
 
     <ul>
-        <li><a href="http://www.reclaimedenterprises.com">Reclaimed Enterprises</li>
         <li><a href="http://www.rmhdesmoines.org">Ronald McDonald House - Des Moines</a></li>
         <li><a href="http://www.goodwillomaha.com">Goodwill Omaha</a></li>
     </ul>
@@ -148,9 +176,9 @@
     <h2 class="work-section-title">Current Workstation</h2>
     <ul>
         <li>Gulp (libsass + browsersync)</li>
-        <li>Sass with Autorprefixer &amp; Susy. No other libraries.</li>
+        <li>Sass</li>
         <li>Git</li>
-        <li>Sublime Text</li>
+        <li>Atom Text Editor</li>
         <li>Chrome Developer Tools</li>
     </ul>
 
@@ -186,7 +214,7 @@
     <p>You can also <a href="https://github.com/jeryj/basic-math">view the basic math code on github</a>.
 -->
 
-    <h2 class="work-section-title">Design &amp; Code - In Depth</h2>
+    <!--<h2 class="work-section-title">Design &amp; Code - In Depth</h2>
     <h3 class="workplace">Reclaimed Enterprises</h3>
     <p>Reclaimed Enterprises (RE) deconstructs old homes and reclaims the materials while telling its story from original construction to selling remade products from their artisans.</p>
 
@@ -225,8 +253,9 @@
 
     <p>Reclaimed Enterprises' website is still being populated. My code expects the unexpected by serving different layouts depending on what content is available and what isn't.</p>
 
-    <p>This site was a great experience for me because it challenged me to design for a complex user combination with multiple desired outcomes. My code is well commented, and Messenger Pigeons (a company I co-founded) will provide ongoing updates and tweaks as more content and users generate adequate data to make those decisions.</p>
+    <p>This site was a great experience for me because it challenged me to design for a complex user combination with multiple desired outcomes. My code is well commented, and Messenger Pigeons (a company I co-founded) will provide ongoing updates and tweaks as more content and users generate adequate data to make those decisions.</p>-->
 
+</main>
 
 
 <footer class="colophon">
@@ -241,6 +270,15 @@
 
 
 
-</main>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15091948-6', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>

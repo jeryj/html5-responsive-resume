@@ -8,6 +8,11 @@ body {
     text-align: center;
 }
 
+.intro {
+    margin-top: 2.6rem;
+
+}
+
 .contact {
     list-style: none;
     margin: 0;
@@ -87,6 +92,10 @@ body {
 .no-work-link,
 .work-link-wrap {
     margin: 0 0 .625em;
+}
+
+.resume-item__inner-title {
+    font-size: 1.1em;
 }
 
 // semantically, this makes sense as a list, but it shouldn't take up that much space.
